@@ -1,0 +1,36 @@
+Rough Idea:
+
+Google spreadsheet as frontend and database
+- Maybe later data collection in database
+- Maybe later frontend for people to log in and change their own stuff
+  - Slots
+  - Absentee (will remove all entries of the person on that day)
+    - will lead to an alarm to a dedicated number of persons.
+  - Sign-in on slots
+  - Warning if sign-in for slots has not been done
+  - no sign in before start leads to general alarm
+  - people can take over and push over slots from/to other people
+  - there needs to be a history on all changes.
+  - People can not take on multiple slots during the same time
+- Maybe later a graphical frontend to create the schedule and manage things
+- Maybe later a connection to discord to ping people
+- Maybe later a  bot in discord that accepts sign-ins from people
+- Maybe later a cached connection to pretalx to get the current schedule
+  - will need to keep special tags on certain talks to mark them differently from the regular type
+
+- If the times are updated automatically we will need to have a =/- setup to move start/end of timeslots.
+- Slots can have different types (currently expressed by colors)
+
+Get spreadsheet from google
+Read tabs in spreadsheet and parse:
+"Volunteers" - To get names to do calculations on
+"Schedule" to get the schedule with timetables
+"days" to get the different slots based on a certain day.
+
+Calculations:
+- calculate number of slots (per type) that don't have an entry  per day
+- calculate the duration of a slot
+- calcluate the number of slots a person has taken on
+- calculate the minutes (hour:minute format) a person has assigned themselves
+- compare minutes/slots to a personal goal each person can have set.
+

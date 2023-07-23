@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volunteer_slots"
+authors = [
+    {name = "Cyril Bitterich", email = "cebit-eps@gunnet.de"},
+]
+description = "Order and look through timeslots filled in by $people"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["volunteer", "timekeeping", "sheets"]
+license = {text = "Apache2"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "google-api-python-client",
+]
+#dynamic = ["version"]
+#
+#[project.optional-dependencies]
+#pdf = ["ReportLab>=1.2", "RXP"]
+#rest = ["docutils>=0.3", "pack ==1.1, ==1.3"]
+#
+#[project.scripts]
+#my-script = "my_package.module:function"
